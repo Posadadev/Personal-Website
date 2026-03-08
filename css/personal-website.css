@@ -1,7 +1,68 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  padding-top: 70px;
 }
 
-body {
-  padding-top: 70px;
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.section-padding {
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.alt-section {
+  background-color: #f1f3f5;
+}
+
+.info-box {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #212529;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    padding: 2rem 1rem;
+  }
+
+  .section-padding {
+    padding: 3.5rem 0;
+  }
+}
+
+.job-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.job-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }

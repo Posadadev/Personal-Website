@@ -17,11 +17,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/personal-website.css" />
 
-    <!-- Custom JS -->
-    <script src="js/personal-website.js"></script>
-
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/personal-website.js"></script>
 
     <!-- Main code -->
   </head>
@@ -36,7 +36,7 @@
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
         >
-          <span class="navbar-toggle-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
@@ -57,21 +57,128 @@
       </div>
     </nav>
     <!-- Home/Title section -->
-    <section id="home">
-      <div class="container">
-        <h1>Title Section</h1>
+    <section id="home" class="home-section d-flex align-items-center">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold">Mateo Posada</h1>
+        <p class="lead">IT Professional, Student, and Aspiring Developer.</p>
+        <a href="#projects" class="btn btn-primary btn-lg mt-3"
+          >View My Projects</a
+        >
       </div>
     </section>
     <!-- About section -->
-    <section id="about">
+    <section id="about" class="section-padding">
       <div class="container">
-        <h2>About Me</h2>
+        <h2 class="section-title">About Me</h2>
+        <p>
+          I am a student with a strong interest in technology, software, and
+          learning how things work.
+        </p>
+        <p>
+          Alongside my coursework, I also work in IT, where I provide frontline
+          tech support in a government environment. That experience has helped
+          me strengthen both my technical skills and my ability to communicate
+          solutions clearly.
+        </p>
       </div>
     </section>
     <!-- Previous work section -->
-    <section id="work">
+    <section id="work" class="section-padding alt-section">
       <div class="container">
-        <h2>Previous Work</h2>
+        <h2 class="section-title">Previous Work & Skills</h2>
+        <div class="row g-4">
+          <!-- Experience column -->
+          <div class="col-md-9">
+            <div class="info-box">
+              <!-- Job 1 -->
+              <div class="job-entry">
+                <img
+                  src="images/saicinc_logo.jpg"
+                  class="job-logo"
+                  alt="SAIC logo"
+                />
+                <div>
+                  <h3>SAIC - FHWA DOT - IT Technican</h3>
+                  <p class="ps-4">
+                    Provide frontline tech support in government environment,
+                    manage tickets, computer builds, set up workstations,
+                    testing and installing software, running repair processes,
+                    completing request forms, website management via Drupal,
+                    user/group creation and management in AD, inventory and
+                    peripherals tracking.
+                  </p>
+                </div>
+              </div>
+              <!-- Job 2 -->
+              <div class="job-entry mt-4">
+                <img
+                  src="images/cat_logo.jpg"
+                  class="job-logo"
+                  alt="Computer Action Team logo"
+                />
+                <div>
+                  <h3>PSU - Computer Action Team - Help Desk Support</h3>
+                  <p class="ps-4">
+                    Assisting users with instructional and technical issues,
+                    managing support tickets, and maintaining large-scale
+                    computer labs, remote-access servers, software support,
+                    printer support.
+                  </p>
+                </div>
+              </div>
+              <!-- Job 3 -->
+              <div class="job-entry mt-4">
+                <img
+                  src="images/target_logo.jpg"
+                  class="job-logo"
+                  alt="Target logo"
+                />
+                <div>
+                  <h3>Target Corporation - Small Format Team Member</h3>
+                  <p class="ps-4">
+                    Helping customers with issues and returns, unloading and
+                    organizing inventory, restocking shelves, maintaining store
+                    appearance, and fulfilling online orders for pickup.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Skill column -->
+          <div class="col-md-3">
+            <div class="info-box skills-box">
+              <div class="skill-group">
+                <h4>Languages</h4>
+                <ul>
+                  <li>Python</li>
+                  <li>C</li>
+                  <li>C++</li>
+                  <li>SQL</li>
+                  <li>Assembly</li>
+                  <li>Bash</li>
+                </ul>
+              </div>
+
+              <div class="skill-group">
+                <h4>Tools</h4>
+                <ul>
+                  <li>GitHub</li>
+                  <li>Linux Command Line</li>
+                  <li>Scrum</li>
+                </ul>
+              </div>
+
+              <div class="skill-group">
+                <h4>Software</h4>
+                <ul>
+                  <li>Active Directory</li>
+                  <li>Drupal CMS</li>
+                  <li>ServiceNow</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Projects section -->
