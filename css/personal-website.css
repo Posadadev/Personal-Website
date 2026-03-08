@@ -1,15 +1,47 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  padding-top: 70px;
+  margin: 0;
+  padding-top: 0;
 }
 
 .home-section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #f8f9fa;
   text-align: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/PDX_Wallpaper.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  margin-top: 0;
+}
+
+.home-section h1 {
+  font-size: 6rem;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+}
+
+.home-section p {
+  font-size: 1.7rem;
+  text-shadow:
+    2px 2px 6px rgba(0, 0, 0, 0.9),
+    0 0 18px rgba(0, 0, 0, 0.9);
+}
+
+.home-section .btn {
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease;
+}
+
+.home-section .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
 }
 
 .section-padding {
@@ -36,6 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 footer {
@@ -57,12 +90,77 @@ footer {
 
 .job-entry {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 15px;
+}
+
+.job-entry h3 {
+  margin-top: 15px;
+}
+
+.job-entry p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.job-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.job-header h3 {
+  margin: 0;
+}
+
+.job-description {
+  margin-top: 0.5rem;
+  margin-left: 6rem;
 }
 
 .job-logo {
   width: 50px;
   height: 50px;
   object-fit: contain;
+  flex-shrink: 0;
+}
+
+.skills-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.skill-group h4 {
+  margin-bottom: 5px;
+}
+
+.skill-group ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.skill-group li {
+  margin-bottom: 4px;
+}
+
+.about-photo {
+  width: 280px;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+.about-text {
+  max-width: 950px;
+  padding-right: 20px;
+  font-size: 1.1rem;
+}
+
+.about-text p {
+  margin-bottom: 1.4rem;
 }

@@ -70,16 +70,29 @@
     <section id="about" class="section-padding">
       <div class="container">
         <h2 class="section-title">About Me</h2>
-        <p>
-          I am a student with a strong interest in technology, software, and
-          learning how things work.
-        </p>
-        <p>
-          Alongside my coursework, I also work in IT, where I provide frontline
-          tech support in a government environment. That experience has helped
-          me strengthen both my technical skills and my ability to communicate
-          solutions clearly.
-        </p>
+        <div class="row align-items-center">
+          <!-- Text column -->
+          <div class="col-md-8 about-text">
+            <p>
+              I am a student with a strong interest in technology, software, and
+              learning how things work.
+            </p>
+            <p>
+              Alongside my coursework, I also work in IT, where I provide
+              frontline tech support in a government environment. That
+              experience has helped me strengthen both my technical skills and
+              my ability to communicate solutions clearly.
+            </p>
+          </div>
+          <!-- Image column -->
+          <div class="col-md-4 text-center">
+            <img
+              src="images/personal_picture.jpg"
+              alt="Mateo Posada Picture"
+              class="about-photo"
+            />
+          </div>
+        </div>
       </div>
     </section>
     <!-- Previous work section -->
@@ -91,56 +104,56 @@
           <div class="col-md-9">
             <div class="info-box">
               <!-- Job 1 -->
-              <div class="job-entry">
-                <img
-                  src="images/saicinc_logo.jpg"
-                  class="job-logo"
-                  alt="SAIC logo"
-                />
-                <div>
-                  <h3>SAIC - FHWA DOT - IT Technican</h3>
-                  <p class="ps-4">
-                    Provide frontline tech support in government environment,
-                    manage tickets, computer builds, set up workstations,
-                    testing and installing software, running repair processes,
-                    completing request forms, website management via Drupal,
-                    user/group creation and management in AD, inventory and
-                    peripherals tracking.
-                  </p>
+              <div class="job-block">
+                <div class="job-header">
+                  <img
+                    src="images/saicinc_logo.jpg"
+                    class="job-logo"
+                    alt="SAIC logo"
+                  />
+                  <h3>SAIC - FHWA DOT - IT Technician</h3>
                 </div>
+                <p class="job-description">
+                  Provide frontline tech support in government environment,
+                  manage tickets, computer builds, set up workstations, testing
+                  and installing software, running repair processes, completing
+                  request forms, website management via Drupal, user/group
+                  creation and management in AD, inventory and peripherals
+                  tracking.
+                </p>
               </div>
               <!-- Job 2 -->
-              <div class="job-entry mt-4">
-                <img
-                  src="images/cat_logo.jpg"
-                  class="job-logo"
-                  alt="Computer Action Team logo"
-                />
-                <div>
+              <div class="job-block">
+                <div class="job-header">
+                  <img
+                    src="images/cat_logo.jpg"
+                    class="job-logo"
+                    alt="Computer Action Team logo"
+                  />
                   <h3>PSU - Computer Action Team - Help Desk Support</h3>
-                  <p class="ps-4">
-                    Assisting users with instructional and technical issues,
-                    managing support tickets, and maintaining large-scale
-                    computer labs, remote-access servers, software support,
-                    printer support.
-                  </p>
                 </div>
+                <p class="job-description">
+                  Assisting users with instructional and technical issues,
+                  managing support tickets, and maintaining large-scale computer
+                  labs, remote-access servers, software support, printer
+                  support.
+                </p>
               </div>
               <!-- Job 3 -->
-              <div class="job-entry mt-4">
-                <img
-                  src="images/target_logo.jpg"
-                  class="job-logo"
-                  alt="Target logo"
-                />
-                <div>
+              <div class="job-block">
+                <div class="job-header">
+                  <img
+                    src="images/target_logo.jpg"
+                    class="job-logo"
+                    alt="Target logo"
+                  />
                   <h3>Target Corporation - Small Format Team Member</h3>
-                  <p class="ps-4">
-                    Helping customers with issues and returns, unloading and
-                    organizing inventory, restocking shelves, maintaining store
-                    appearance, and fulfilling online orders for pickup.
-                  </p>
                 </div>
+                <p class="job-description">
+                  Helping customers with issues and returns, unloading and
+                  organizing inventory, restocking shelves, maintaining store
+                  appearance, and fulfilling online orders for pickup.
+                </p>
               </div>
             </div>
           </div>
@@ -182,7 +195,7 @@
       </div>
     </section>
     <!-- Projects section -->
-    <section id="projects">
+    <section id="projects" class="section-padding">
       <div class="container">
         <h2>My Projects</h2>
       </div>
