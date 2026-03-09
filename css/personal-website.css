@@ -142,7 +142,7 @@ footer {
 
 .skill-group ul {
   padding-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: -10px;
 }
 
 .skill-group li {
@@ -163,4 +163,28 @@ footer {
 
 .about-text p {
   margin-bottom: 1.4rem;
+}
+
+.project-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.project-tech {
+  margin-bottom: 1rem;
+  color: #555;
 }
