@@ -292,9 +292,74 @@
       </div>
     </section>
     <!-- Contact section -->
-    <section id="contact">
+    <section id="contact" class="section-padding alt-section">
       <div class="container">
-        <h2>Contact</h2>
+        <h2 class="section-title">Contact</h2>
+        <div class="row g-4 align-items-start">
+          <!-- Left contact -->
+          <div class="col-md-7">
+            <form id="contactForm" class="contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+                <small class="error-message" id="nameError"></small>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+                <small class="error-message" id="emailError"></small>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Write your message here"
+                ></textarea>
+                <small class="error-message" id="messageError"></small>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+              <p id="formSuccess" class="success-message mt-3"></p>
+            </form>
+          </div>
+          <!-- Right form -->
+          <div class="col-md-5">
+            <div class="contact-info">
+              <h4>Contact Information</h4>
+              <p>
+                <strong>Email:</strong><br />
+                mateoposada.mnp@gmail.com
+              </p>
+              <p>
+                <strong>Phone:</strong><br />
+                (503) 544-2669
+              </p>
+              <p>
+                <strong>Location:</strong><br />
+                Portland, OR
+              </p>
+              <p>
+                <strong>GitHub:</strong><br />
+                <a href="https://github.com/Posadadev" target="_blank">
+                  github.com/Posadadev
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Footer section -->
